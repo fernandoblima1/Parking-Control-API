@@ -21,9 +21,9 @@ public class ParkingSpotModel implements Serializable {
     @Column(nullable = false, unique = true, length = 10)
     private String parkingSpotNumber;
     @Column(nullable = false, unique = true, length = 7)
-    private String licensePlateString;
+    private String licensePlate;
     @Column(nullable = false, length = 70)
-    private String brandCarString;
+    private String brandCar;
     @Column(nullable = false, length = 70)
     private String modelCar;
     @Column(nullable = false, length = 70)
@@ -36,6 +36,7 @@ public class ParkingSpotModel implements Serializable {
     private String apartment;
     @Column(nullable = false, length = 3)
     private String block;
+
     public static long getSerialversionuid() {
         return serialVersionUID;
     }
@@ -51,17 +52,17 @@ public class ParkingSpotModel implements Serializable {
     public void setParkingSpotNumber(String parkingSpotNumber) {
         this.parkingSpotNumber = parkingSpotNumber;
     }
-    public String getLicensePlateString() {
-        return licensePlateString;
+    public String getLicensePlate() {
+        return licensePlate;
     }
-    public void setLicensePlateString(String licensePlateString) {
-        this.licensePlateString = licensePlateString;
+    public void setLicensePlate(String licensePlate) {
+        this.licensePlate = licensePlate;
     }
-    public String getBrandCarString() {
-        return brandCarString;
+    public String getBrandCar() {
+        return brandCar;
     }
-    public void setBrandCarString(String brandCarString) {
-        this.brandCarString = brandCarString;
+    public void setBrandCar(String brandCar) {
+        this.brandCar = brandCar;
     }
     public String getModelCar() {
         return modelCar;
